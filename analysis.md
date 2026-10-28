@@ -1,0 +1,3 @@
+# Analysis Question
+
+A linked-list stack pushes at the head because the head can be updated directly, so pushing and popping take **O(1)** time. Popping from the tail of a singly linked list would take **O(n)** time because we would need to travel through the list to find the node before the tail. An array queue should be circular so that it can reuse empty spaces at the beginning of the array after items are removed. Without a circular design, the queue could reach the physical end of the array even when there are empty spaces at the beginning. The `front` index and `size` counter help the circular queue track its items and tell the difference between a full queue and an empty queue.
